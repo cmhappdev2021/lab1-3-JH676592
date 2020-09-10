@@ -135,13 +135,16 @@ let multipliedAsIntegers = x * Int(y)
 print(multipliedAsIntegers)
 
 // Create a constant multipliedAsDoubles equal to x times y, but this time convert the Int to a Double in the expression. Print the result.
-
+let multipliedAsDoubles = Double(x) * y
+print(multipliedAsDoubles)
 
 // Are the values of multipliedAsIntegers and multipliedAsDoubles different? Print a statement to the console explaining why.
-
+print("Yes, the two values are different because the double won't round down because it is more percise (uses decimals)")
 
 // If you completed the Fitness Calculations exercise, you calculated the percent of the daily step goal that a user has achieved. However, you did this by having steps be of type Double. But you can't really track a partial step, so steps should probably be of type Int. Go ahead and declare steps as type Int and give it a value between 500 and 6,000. Then declare goal as type Int and set it equal to 10,000.
-
-
+let stepsTaken2 = Int(4_500)
+let goal2 = Int(10_000)
 
 // Now create a constant percentOfGoal of type Double that equals the percent of the goal that has been reached so far. You'll need to convert your constants of type Int to be of type Double in your calculation.
+let percentOfGoal2: Double = Double(stepsTaken2)/Double(goal2) * 100
+print(percentOfGoal2)
