@@ -122,13 +122,17 @@ let heartRateConstant3: Double = 94
 let averageHeartRate: Double = (heartRateConstant1 + heartRateConstant2 + heartRateConstant3)/3
 
 // One feature you might want to give users is to display their current body temperature. Create a constant tempInFahrenheit equal to 98.6.
-
+let tempInFahrenheit = 98.6
 
 // You may want to also show the temperature in celsius. You can convert fahrenheit to celsius by taking tempInFahrenheit and subtracting 32, then multiplying the result by (5.0/9.0). Create a constant tempInCelsius that calculates in one line the temperature in celsius.
-
+let tempInCelsius: Double = (tempInFahrenheit - 32) * (5.0/9.0)
 
 // Create an integer constant x with a value of 10, and a double constant y with a value of 3.2. Create a constant multipliedAsIntegers equal to x times y. Does this compile? If not, fix it by converting your Double to an Int in the mathematical expression. Print the result.
-
+let x = 10
+let y = 3.2
+//let multipliedAsIntegers = x * y - did not compile because you cannot multiply two ints by the same thing
+let multipliedAsIntegers = x * Int(y)
+print(multipliedAsIntegers)
 
 // Create a constant multipliedAsDoubles equal to x times y, but this time convert the Int to a Double in the expression. Print the result.
 
