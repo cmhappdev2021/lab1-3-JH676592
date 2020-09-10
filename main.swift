@@ -13,10 +13,16 @@ let perimeter = width + width + height + height
 print(perimeter)
 
 // Print what you would expect the result of integer division of 10 divided by 3 to be. Create a constant, integerDivisionResult that is the result of 10 divided by 3, and print the value.
-
+print("I would expect 10/3 to be 3 since it is an int type and not a double")
+let integerDivisionResult = 10/3
+print(integerDivisionResult)
 
 // Now create two constants, double10 and double3, set to 10 and 3, and declare their types as Double values. Declare a final constant divisionResult equal to the result of double10 divided by double3. Print the value of divisionResult. How does this differ from the value when using integer division?
-
+let double10: Double = 10
+let double3: Double = 3
+let divisionResult = double10/double3
+print(divisionResult)
+print("This differs from the int value as doubles allow for decimal places. This means that the divisionResult of two doubles is more acurate than a divisionResult of two doubles.")
 
 /* Given the value pi (3.1415927), create a radius constant with a value of 5.0, then calculate the diameter and circumference of the circle using the following equations, and print the results:
 
@@ -24,8 +30,12 @@ diameter = 2 * radius
 
 circumference = 2 * pi * radius. */
 
+let radius = 5.0
 let pi = 3.1415927
-
+let diameter = 2 * radius
+let circumference = 2 * pi * radius
+print(diameter)
+print(circumference)
 
 // Your fitness tracker keeps track of users' heart rate, but you might also want to display their average heart rate over the last hour. Create three constants, heartRate1, heartRate2, and heartRate3. Give each constant a different value between 60 and 100. Create a constant addedHR equal to the sum of all three heart rates. Now create a constant called averageHR that equals addedHR divided by 3 to get the average. Print the result.
 
