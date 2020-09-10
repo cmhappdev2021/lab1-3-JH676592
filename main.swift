@@ -77,15 +77,29 @@ You triple what's left in your piggy bank by washing windows
 You spend 3 dollars at a convenience store
 
 Print the balance of your piggy bank after each step. */
-
+var piggyBank = 0
+print(piggyBank)
+piggyBank += 10
+print(piggyBank)
+piggyBank += 20
+print(piggyBank)
+piggyBank /= 2
+print(piggyBank)
+piggyBank *= 3
+print(piggyBank)
+piggyBank -= 3
+print(piggyBank)
 
 // The most basic feature of your fitness tracking app is counting steps. Create a variable steps and set it equal to 0. Then increment its value by 1 to simulate a user taking a step.
-
+var stepsTaken = 0
+stepsTaken += 1
 
 /* In addition to tracking steps, your fitness tracking app tracks distance traveled. Create a variable distance of type Double and set it equal to 50. This will represent the user having traveled 50 feet.
 
 You decide, however, to display the distance in meters. 1 meter is approximately equal to 3 feet. Use a compound assignment operator to convert distance to meters. Print the result. */
-
+var distanceTraveled: Double = 50
+distanceTraveled /= 3
+print(distanceTraveled)
 
 // Print out what you think 10 + 2 * 5 evaluates to. Then print out the actual expression (i.e. print(10 + 2 * 5))
 
